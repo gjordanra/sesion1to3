@@ -1,17 +1,16 @@
 import React from 'react'
-import PropTypes from 'prop-types'
+import { Contacto } from '../models/contacto.class'
+import Componentb from './componentb'
 
-const componenta = props => {
+const Componeta = ({props}) => {
+  const defaultContacto = new Contacto("Gustavo", "Jordan", "gjordanrad@gmail.com", true);
+
   return (
     <div>
-        <componentb></componentb>
+        <h1>Contact</h1>
+        <Componentb contacto = {defaultContacto}></Componentb>
     </div>
-
   )
 }
 
-componenta.propTypes = {
-
-}
-
-export default componenta
+export default Componeta

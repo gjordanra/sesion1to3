@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import Componeta from './components/containers/componenta';
 
 
 function App() {
@@ -7,12 +8,10 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-       
-        
-
+      <Componeta></Componeta>
       </header>
-      <componenta></componenta>
-      <componetb></componetb>
+      
+      
     </div>
   );
 }
